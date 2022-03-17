@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 <title>Positive</title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="{page.yoast_title}"/>
+<meta property="og:title" content={page.yoast_title} />
 <meta property="og:url" content=""/>
 <meta property="og:site_name" content=""/>
 <meta property="article:section" content="Animal"/>
