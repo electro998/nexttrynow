@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Image from "next/image";
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -11,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 <title>PP</title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content={post.title.rendered} />
+<meta property="og:title" content=`{post.title.rendered}` />
 <meta property="og:url" content=""/>
 <meta property="og:site_name" content=""/>
 <meta property="article:section" content="Animal"/>
