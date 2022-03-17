@@ -24,7 +24,7 @@ export default function Home({posts, events}) {
   return (
     <>
       <Head>
-        <title>positivityminds.com/</title>
+        <title>positivityminds.com</title>
         <meta name="description" content="Keep up to date with the latest trends in tech" />
         <link rel="icon" href="/favicon.ico" />
         {/* You can add more metadata here, like open graph tags for social media, etc */}
