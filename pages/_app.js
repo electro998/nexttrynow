@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
 <meta charset="UTF-8"/>
-  <title>{`${title}`}</title>
+  <title>{home.yoast_title} meta={home.yoast_meta}</title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="" />
