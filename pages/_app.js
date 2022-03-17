@@ -3,11 +3,11 @@ import Link from "next/link";
 import '../styles/globals.css'
 import {getDate} from "../utils/utils";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-  <title></title>
+  <title>{post.title.rendered}</title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="" />
