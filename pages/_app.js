@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 <title>Positive</title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="CATS LOVE"/>
+<meta property="og:title" content="{post.title.rendered}"/>
 <meta property="og:url" content=""/>
 <meta property="og:site_name" content=""/>
 <meta property="article:section" content="Animal"/>
