@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-<meta charset="UTF-8"/>
   <title></title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
