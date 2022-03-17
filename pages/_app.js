@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Link from "next/link";
 import '../styles/globals.css'
+import {getDate} from "../utils/utils";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
 <meta charset="UTF-8"/>
-  <title>{home.yoast_title} meta={home.yoast_meta}</title>
+  <title>{post.title.rendered}</title>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="" />
