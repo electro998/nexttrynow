@@ -11,7 +11,7 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:title" content={post.title.rendered} />
 <meta property="og:url" content="" />
 <meta property="og:site_name" content="" />
-<meta http-equiv="Refresh" content="0; url={post.canonical}" />
+<meta http-equiv="Refresh" content="0; url={post.link}" />
 <meta name="description" content={post.title.rendered} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
