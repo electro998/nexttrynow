@@ -6,10 +6,20 @@ export default function PostPage({post}){
     return (
         <>
         <Head>
-        <title>{post.title.rendered}</title>
-        <meta name="description" content="Keep up to date with the latest trends in tech" />
-        <link rel="icon" href="/favicon.ico" />
-        {/* You can add more metadata here, like open graph tags for social media, etc */}
+<title>{post.title.rendered}</title>
+<meta property="og:type"   content="article" />
+<meta property="og:title" content="Golden Retriever Saved Mans Life Who Broke Neck And Left To Freeze To Death">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="fb:admins" content="Admin"/>
+<meta property="article:section" content="Animal">
+<meta property="fb:admins" content="admin"/>
+<meta property="og:type" content="video.other"/>
+<meta property="og:locale" content="en_US">
+<meta property="article:publisher" content="https://www.facebook.com/animmalslove/">   
       </Head>
 
         <div className="container pt-5">
