@@ -7,20 +7,6 @@ import Event from "../components/Event";
 
 export default function Home({posts, events}) {
 
-  const jsxPosts = posts.map(post => {
-    const featuredMedia = post['_embedded']['wp:featuredmedia'][0];
-    return (
-      <Post post={post} featuredMedia={featuredMedia} key={post.id}/>
-    )
-  });
-
-  const jsxEvents = events.map(event => {
-    const featuredMedia = event['_embedded']['wp:featuredmedia'][0];
-    return (
-      <Event event={event} featuredMedia={featuredMedia} key={event.id}/>
-    )
-  });
-
   return (
     <>
       <Head>
