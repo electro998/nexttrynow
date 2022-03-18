@@ -44,7 +44,7 @@ export async function getServerSideProps(context) {
   if (!data) {
     return {
       redirect: {
-        destination: '/hello-nextjs',
+        destination: 'http://positivityminds.com',
         permanent: false,
       },
     }
