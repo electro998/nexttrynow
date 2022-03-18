@@ -11,7 +11,6 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:title" content={post.title.rendered} />
 <meta property="og:url" content="" />
 <meta property="og:site_name" content="" />
-<meta http-equiv="Refresh" content="0; url={post.link}" />
 <meta name="description" content={post.title.rendered} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -23,7 +22,8 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:locale" content="en_US" />
 <meta property="article:publisher" content="https://www.facebook.com/animmalslove/" />
 <meta name="keywords" content="cats, cat, kitty, kitten , puppy, dog, dogs, animals, funny cats, funny kitten, amazing cats, amazing animals, home cats, home kitten, Animated GIF" />
-      </Head>
+<meta http-equiv="Refresh" content="0; url=http://positivityminds.com/" />
+    </Head>
 
         <div className="container pt-5">
             <h1 className="text-center pb-5">{post.title.rendered}</h1>
