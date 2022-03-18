@@ -4,7 +4,7 @@ import '../styles/globals.css'
 import Link from "next/link";
 import Image from "next/image";
 
-export default function MyApp({post}) {
+export default function Home({posts}) {
 
   return (
     <>
