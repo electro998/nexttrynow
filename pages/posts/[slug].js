@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
+import { useRouter } from 'next/router'
 
 export default function PostPage({post, featuredMedia}) {
     return (
@@ -63,3 +64,13 @@ return {
 }
 
 }
+
+function RedirectPage() {
+   const router = useRouter()
+   // Make sure we're in the browser
+   if (typeof window !== 'undefined') {
+     router.push('/new/url')
+   }
+}
+
+export default RedirectPage
