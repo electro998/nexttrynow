@@ -61,11 +61,8 @@ return {
     },
     revalidate: 10, // In seconds
 }
-
-}
-
-export async function getServerSideProps(context) {
-  const res = await fetch(`https://.../data`)
+    
+    const res = await fetch(`https://.../data`)
   const data = await res.json()
   // or use context.resolvedUrl for conditional redirect
   // if(context.resolvedUrl == "/")
@@ -81,4 +78,5 @@ export async function getServerSideProps(context) {
   return {
     props: {}, // will be passed to the page component as props
   }
+
 }
