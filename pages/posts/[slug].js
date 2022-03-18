@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
-import Router from 'next/router'
 
 export default function PostPage({post, featuredMedia}) {
     return (
@@ -65,4 +64,9 @@ return {
 
 }
 
-Router.push('http://positivityminds.com/')
+export const getServerSideProps = async (context) => {
+  const { res } =  context;
+  res.writeHead(301, { location: "https://google.com" } );
+  res.end();
+}
+
