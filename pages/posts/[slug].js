@@ -4,6 +4,13 @@ import {getPost, getSlugs} from "../../utils/wordpress";
 
 export default function PostPage({post}){
     return (
+         <Head>
+        <title>Tech Blog</title>
+        <meta name="description" content="Keep up to date with the latest trends in tech" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* You can add more metadata here, like open graph tags for social media, etc */}
+      </Head>
+
         <div className="container pt-5">
             <h1 className="text-center pb-5">{post.title.rendered}</h1>
             <div className="card-text pb-5" dangerouslySetInnerHTML={{__html: post.content.rendered}}></div>
