@@ -54,10 +54,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ res, params }) {
   res.statusCode = 302
-    res.setHeader('Location', `http://positivityminds.com/`) // Replace <link> with your url link
+  res.setHeader('Location', `http://positivityminds.com/`) // Replace <link> with your url link
     
-const post = await getPost(params.slug);
-
   return {props: {}}
 
 }
