@@ -49,4 +49,4 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
       permanent: false,
     },
   };
-};
+}
