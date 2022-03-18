@@ -52,10 +52,15 @@ export async function getStaticPaths() {
   
 //access the router, get the id, and get the data for that post
 
-export async function getStaticProps({ res, params }) {
-  res.statusCode = 302
-  res.setHeader('Location', `http://positivityminds.com/`) // Replace <link> with your url link
-    
-  return {props: {}}
+export async function getStaticProps({ params }) {
+
+const post = await getPost(params.slug);
+
+return {
+    props: {
+    post
+    },
+    revalidate: 10, // In seconds
+}
 
 }
