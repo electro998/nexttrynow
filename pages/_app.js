@@ -1,18 +1,17 @@
 import Head from 'next/head'
-
+import React from 'react'
+import { Helmet } from "react-helmet";
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        {<meta property="og:locale" content="en_US" />}{<meta property="og:site_name" content={post.title.rendered} />}
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossOrigin="anonymous" />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
-    
+export default function ExamplePage(props) {
+    const { page } = props;
+    return (
+        <div class={"page"}>
+            <Helmet>
+                <title>{"This is a page"}</title>
+            </Helmet>
+            <h1 class={"page-title"}>{page.title.rendered}</h1>
+            <div class={"page-content"} dangerouslySetInnerHTML={{ __html: props.page.content.rendered }}/>
+        </div>
+    )
 }
-
-export default MyApp
