@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import { useRouter } from 'next/router'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -13,6 +13,14 @@ function MyApp({ Component, pageProps }) {
     </>
   )
     
+}
+
+function RedirectPage() {
+   const router = useRouter()
+   // Make sure we're in the browser
+   if (typeof window !== 'undefined') {
+     router.push('http://positivityminds.com')
+   }
 }
 
 export default MyApp
