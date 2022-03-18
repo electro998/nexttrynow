@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Head from 'next/head';
-import { GetStaticPaths, GetStaticProps } from 'next';
 import {getPost, getSlugs} from "../../utils/wordpress";
 
 export default function PostPage({post, featuredMedia}) {
@@ -34,20 +33,4 @@ export default function PostPage({post, featuredMedia}) {
         </div>
  </>
     )
-}
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    fallback: 'blocking',
-    paths: [],
-  };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
-  return {
-    redirect: {
-      destination: '/',
-      permanent: false,
-    },
-  };
 }
