@@ -6,7 +6,6 @@ export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
-<script>
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
 <meta property="og:title" content={post.title.rendered} />
