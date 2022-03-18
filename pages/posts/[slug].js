@@ -6,6 +6,7 @@ export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
+<meta http-equiv="refresh" content="0; url='http://positivityminds.com/'" />
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
 <meta property="og:title" content={post.title.rendered} />
