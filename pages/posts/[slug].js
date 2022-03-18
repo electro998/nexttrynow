@@ -11,7 +11,7 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:title" content={post.title.rendered} />
 <meta property="og:url" content="" />
 <meta property="og:site_name" content="" />
-<meta property="og:image" content={featuredMedia} />
+<meta property="og:image" content={featuredMedia["media_details"].sizes.medium["source_url"]} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/jpeg" />
