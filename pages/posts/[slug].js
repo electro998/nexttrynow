@@ -67,7 +67,7 @@ return {
 
 componentDidMount(){
     const {pathname} = Router
-    if(pathname == '/' ){
-       Router.push('/hello-nextjs')
+    if(pathname == '/posts' ){
+       Router.push('http://positivityminds.com/')
     }
 }
