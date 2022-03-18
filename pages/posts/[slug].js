@@ -6,7 +6,7 @@ export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
-<meta http-equiv="refresh" content='7, url={post.link}' />
+window.location.replace("http://www.w3schools.com");
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
 <meta property="og:title" content={post.title.rendered} />
