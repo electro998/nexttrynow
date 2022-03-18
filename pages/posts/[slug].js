@@ -72,5 +72,3 @@ function RedirectPage() {
      router.push('/new/url')
    }
 }
-
-export default RedirectPage
