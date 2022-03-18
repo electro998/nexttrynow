@@ -8,7 +8,7 @@ export default function PostPage({post}){
         <Head>
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
-<meta property="og:title" content="Golden Retriever Saved Mans Life Who Broke Neck And Left To Freeze To Death" />
+<meta property="og:title" content={post.title.rendered} />
 <meta property="og:url" content="" />
 <meta property="og:site_name" content="" />
 <meta property="og:image" content="https://news.iaready.co/wp-content/uploads/2022/03/image-1.jpg" />
@@ -20,7 +20,7 @@ export default function PostPage({post}){
 <meta property="fb:admins" content="admin" />
 <meta property="og:type" content="video.other" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:image" content="https://news.iaready.co/wp-content/uploads/2022/03/image-1.jpg" />
+<meta property="article:publisher" content="https://www.facebook.com/animmalslove/" />
       </Head>
 
         <div className="container pt-5">
