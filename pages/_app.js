@@ -8,7 +8,7 @@ export default function ExamplePage(props) {
         <div class={"page"}>
             <Head>
                 <title>{"This is a page"}</title>
-            </HEAD>
+            </Head>
             <h1 class={"page-title"}>{page.title.rendered}</h1>
             <div class={"page-content"} dangerouslySetInnerHTML={{ __html: props.page.content.rendered }}/>
         </div>
