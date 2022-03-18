@@ -35,23 +35,14 @@ export default function PostPage({post, featuredMedia}) {
     )
 }
 
-//hey Next, these are the possible slugs
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    fallback: 'blocking',
+    paths: [],
+  };
+};
 
-    const paths = await getSlugs("posts");
-  
-    return {
-        paths,
-        //this option below renders in the server (at request time) pages that were not rendered at build time
-        //e.g when a new blogpost is added to the app
-        fallback: 'blocking'
-    }
-  
-  }
-  
-//access the router, get the id, and get the data for that post
-
-export async function GetStaticProps = async ({ params, locale }) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   return {
     redirect: {
       destination: '/',
