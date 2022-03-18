@@ -4,7 +4,8 @@ import {getPost, getSlugs} from "../../utils/wordpress";
 
 export default function PostPage({post}){
     return (
-         <Head>
+        <>
+        <Head>
         <title>Tech Blog</title>
         <meta name="description" content="Keep up to date with the latest trends in tech" />
         <link rel="icon" href="/favicon.ico" />
@@ -18,6 +19,7 @@ export default function PostPage({post}){
                 <a className="btn btn-primary">Back to Home</a>
             </Link>
         </div>
+ </>
     )
 }
 
