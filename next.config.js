@@ -1,6 +1,15 @@
 module.exports = {
-    images: {
-        //enter the domain or subdomain where you have WordPress installed 
+  async redirects() {
+    return [
+      {
+        source: '/posts/:slug*',
+        destination: '{post.link}',
+        permanent: true,
+      },
+    ]
+  },
+    
+  images: {
       domains: ['positivityminds.com'],
-    },
+    },  
 }
