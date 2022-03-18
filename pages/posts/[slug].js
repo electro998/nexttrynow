@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
-import React, { useEffect } from "react";
-import Router from 'next/router'
 
 export default function PostPage({post, featuredMedia}) {
     return (
@@ -66,9 +64,21 @@ return {
 
 }
 
-useEffect(() => {
-   const {pathname} = Router
-   if(pathname == '/posts' ){
-       Router.push('http://positivityminds.com/')
-   }
- });
+export async function getServerSideProps(context) {
+  const res = await fetch(`https://.../data`)
+  const data = await res.json()
+  // or use context.resolvedUrl for conditional redirect
+  // if(context.resolvedUrl == "/")
+  if (!data) {
+    return {
+      redirect: {
+        destination: '/hello-nextjs',
+        permanent: false,
+      },
+    }
+  }
+
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
