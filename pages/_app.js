@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import {getDate} from "../utils/utils";
 
-export default function Post({post, featuredMedia}) {
+export default function MyApp({post, featuredMedia}) {
 
     return (
         <div className="card mb-3" style={{maxWidth: "540px"}}>
