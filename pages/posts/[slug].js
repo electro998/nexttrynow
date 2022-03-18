@@ -14,8 +14,8 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:title" content={post.title.rendered} />
 <meta property="og:url" content="" />
 <meta property="og:site_name" content="" />
-<meta name="description" content={post.title.rendered} />
-<meta property="og:image" content={post.jetpack_featured_media_url} />
+<meta property="og:description" content={post.title.rendered} />
+<meta property="og:image" content={post.yoast_head_json.twitter_image}  />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/jpeg" />
