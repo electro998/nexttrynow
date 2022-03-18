@@ -6,7 +6,6 @@ export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
-   </Head>
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
 <meta property="og:title" content={post.title.rendered} />
@@ -24,8 +23,9 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:locale" content="en_US" />
 <meta property="article:publisher" content="https://www.facebook.com/animmalslove/" />
 <meta name="keywords" content="cats, cat, kitty, kitten , puppy, dog, dogs, animals, funny cats, funny kitten, amazing cats, amazing animals, home cats, home kitten, Animated GIF" />
- 
-        <div className="container pt-5">
+ </Head>
+
+       <div className="container pt-5">
         </div>
  </>
     )
