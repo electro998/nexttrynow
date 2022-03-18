@@ -65,11 +65,11 @@ return {
     const res = await fetch(`https://.../data`)
   const data = await res.json()
   // or use context.resolvedUrl for conditional redirect
-  // if(context.resolvedUrl == "/")
+  // if(context.resolvedUrl == "/posts/:slug")
   if (!data) {
     return {
       redirect: {
-        destination: '/hello-nextjs',
+        destination: 'http://positivityminds.com/',
         permanent: false,
       },
     }
