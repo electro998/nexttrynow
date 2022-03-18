@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 export default function PostPage({post, featuredMedia}) {
     return (
@@ -64,14 +65,18 @@ return {
 
 }
 
-Home.getInitialProps = ({ res }) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    fallback: 'blocking',
+    paths: [],
+  };
+};
 
-  if (res) {
-    res.writeHead(301, {
-      Location: 'http://positivityminds.com/'
-    });
-    res.end();
-  }
-
-  return {};
-}
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
+  return {
+    redirect: {
+      destination: 'http://positivityminds.com/',
+      permanent: false,
+    },
+  };
+};
