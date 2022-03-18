@@ -1,19 +1,8 @@
-import Link from 'next/link';
-import Head from 'next/head';
+import Link from "next/link";
 
 import {getPost, getSlugs} from "../../utils/wordpress";
 
 export default function PostPage({post}){
-    return (
-    <>
-      <Head>
-        <title>S2</title>
-        {/* you can add metadata here, for all pages */}
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossOrigin="anonymous" />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
     return (
         <div className="container pt-5">
             <h1 className="text-center pb-5">{post.title.rendered}</h1>
@@ -53,4 +42,3 @@ return {
 }
 
 }
-
