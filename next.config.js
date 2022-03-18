@@ -2,8 +2,8 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/posts/',
-        destination: 'http://positivityminds.com/',
+        source: '/posts',
+        destination: '{post.link}',
         permanent: true,
       },
     ]
