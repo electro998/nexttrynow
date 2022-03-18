@@ -20,6 +20,8 @@ export default function PostPage({post}){
 <meta property="fb:admins" content="admin"/>
 <meta property="og:type" content="video.other"/>
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://news.iaready.co/wp-content/uploads/2022/03/image-1.jpg">
+ {/* You can add more metadata here, like open graph tags for social media, etc */}
       </Head>
 
         <div className="container pt-5">
