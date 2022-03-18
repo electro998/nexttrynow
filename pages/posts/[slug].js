@@ -51,15 +51,11 @@ export async function getStaticPaths() {
   
 //access the router, get the id, and get the data for that post
 
-export async function getStaticProps({ params }) {
-
-const post = await getPost(params.slug);
-
+export async function GetStaticProps = async ({ params, locale }) => {
   return {
     redirect: {
-      destination: 'http://positivityminds.com/',
+      destination: '/',
       permanent: false,
     },
   };
-
-}
+};
