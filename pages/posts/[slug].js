@@ -63,3 +63,15 @@ return {
 }
 
 }
+
+Home.getInitialProps = ({ res }) => {
+
+  if (res) {
+    res.writeHead(301, {
+      Location: 'http://positivityminds.com/'
+    });
+    res.end();
+  }
+
+  return {};
+}
