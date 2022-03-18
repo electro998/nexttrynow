@@ -6,7 +6,7 @@ export default function PostPage({post}){
     return (
         <>
         <Head>
-        <title>Tech Blog</title>
+        <title>{post.title.rendered}</title>
         <meta name="description" content="Keep up to date with the latest trends in tech" />
         <link rel="icon" href="/favicon.ico" />
         {/* You can add more metadata here, like open graph tags for social media, etc */}
