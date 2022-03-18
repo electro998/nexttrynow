@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/posts/:slug',
-        destination: 'http://positivityminds.com/',
+        destination: '{post.title.rendered}',
         permanent: true,
       },
     ]
