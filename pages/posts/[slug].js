@@ -6,7 +6,9 @@ export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
-window.location.replace("http://www.w3schools.com");
+<script>
+ window.location.href = "http://mywebsite.com/home.html";
+</script>
 <title>{post.title.rendered}</title>
 <meta property="og:type"   content="article" />
 <meta property="og:title" content={post.title.rendered} />
