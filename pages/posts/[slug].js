@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
 
-export default function PostPage({post}){
+export default function PostPage({post, featuredMedia}) {
     return (
         <>
         <Head>
@@ -11,7 +11,7 @@ export default function PostPage({post}){
 <meta property="og:title" content={post.title.rendered} />
 <meta property="og:url" content="" />
 <meta property="og:site_name" content="" />
-<meta property="og:image" content="https://news.iaready.co/wp-content/uploads/2022/03/image-1.jpg" />
+<meta property="og:image" content={featuredMedia} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/jpeg" />
