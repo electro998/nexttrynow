@@ -1,4 +1,4 @@
-module.exports = ({post}) {
+module.exports = {
     return (
   async redirects() {
     return [
