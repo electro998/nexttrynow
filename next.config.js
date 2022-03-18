@@ -1,4 +1,8 @@
-module.exports = {
+odule.exports = async (phase, { defaultConfig }) => {
+  /**
+   * @type {import('next').NextConfig}
+   */
+  const nextConfig = {
   async redirects() {
     return [
       {
@@ -8,4 +12,6 @@ module.exports = {
       },
     ]
   },
+  }
+  return nextConfig
 }
