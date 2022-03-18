@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from 'next/head';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import {getPost, getSlugs} from "../../utils/wordpress";
 
 export default function PostPage({post, featuredMedia}) {
