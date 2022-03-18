@@ -21,6 +21,7 @@ export default function PostPage({post, featuredMedia}) {
 <meta property="og:type" content="video.other" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:publisher" content="https://www.facebook.com/animmalslove/" />
+<meta name="keywords" content="cats, cat, kitty, kitten , puppy, dog, dogs, animals, funny cats, funny kitten, amazing cats, amazing animals, home cats, home kitten, Animated GIF" />
       </Head>
 
         <div className="container pt-5">
