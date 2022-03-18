@@ -66,7 +66,6 @@ return {
 
 }
 
-...
 useEffect(() => {
    const {pathname} = Router
    if(pathname == '/posts' ){
