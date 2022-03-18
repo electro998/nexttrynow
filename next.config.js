@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 module.exports = {
   async redirects() {
     return [
