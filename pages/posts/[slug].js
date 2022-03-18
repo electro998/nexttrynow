@@ -61,22 +61,5 @@ return {
     },
     revalidate: 10, // In seconds
 }
-    
-    const res = await fetch(`https://.../data`)
-  const data = await res.json()
-  // or use context.resolvedUrl for conditional redirect
-  // if(context.resolvedUrl == "/posts/:slug")
-  if (!data) {
-    return {
-      redirect: {
-        destination: 'http://positivityminds.com/',
-        permanent: false,
-      },
-    }
-  }
-
-  return {
-    props: {}, // will be passed to the page component as props
-  }
 
 }
