@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
+import React, { useEffect } from "react";
 import Router from 'next/router'
 
 export default function PostPage({post, featuredMedia}) {
@@ -65,9 +66,10 @@ return {
 
 }
 
-componentDidMount(){
-    const {pathname} = Router
-    if(pathname == '/posts' ){
-       Router.push('http://positivityminds.com/')
-    }
-}
+...
+useEffect(() => {
+   const {pathname} = Router
+   if(pathname == '/' ){
+       Router.push('/hello-nextjs')
+   }
+ });
