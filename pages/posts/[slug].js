@@ -1,22 +1,6 @@
 import Link from "next/link";
 import Head from 'next/head';
 import {getPost, getSlugs} from "../../utils/wordpress";
-import React, { Component, useEffect } from "react";
-
-function PostPage() {
-  useEffect(() => {
-    window.location.href = "https://google.com/about";
-  }, []);
-
-  return (
-    <div>
-      <h1>This page is not available</h1>
-      <p>You are redirecting to google.com/about</p>
-    </div>
-  );
-}
-
-export default About;
 
 export default function PostPage({post, featuredMedia}) {
     return (
